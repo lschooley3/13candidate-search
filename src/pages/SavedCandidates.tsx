@@ -4,7 +4,7 @@ const SavedCandidates = () => {
   return (
     <>
       <h1>Potential Candidates</h1>
-      <table>
+      <table className="table">
         <thead>
           <tr>
             <th>Image</th>

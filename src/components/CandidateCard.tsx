@@ -14,15 +14,15 @@ const CandidateCard:React.FC<CandidateCardProps> = ({candidate, handleNext}) => 
       <div className="card">
         <div className="card-body">
             <img className="card-image" src={candidate.avatar_url} alt="avatar" />
-          <h5 className="card-title"><a href={`${candidate.html_url}`}>{candidate.login}</a></h5>
+          <h5 ><a href={`${candidate.html_url}`}>{candidate.login}</a></h5>
           <p className="card-text">Location: {candidate.location}</p>
           <p className="card-text">Email: {candidate.email}</p>
           <p className="card-text">Company: {candidate.company}</p>
           <p className="card-text">Bio: {candidate.bio}</p>
         </div>
       </div>
-      <button onClick={()=>handleNext(false)}>X</button>
-      <button onClick={()=>handleNext(true)}>+</button>
+      <button className="btnX"onClick={()=>handleNext(false)}>X</button>
+      <button className="btnY" onClick={()=>handleNext(true)}>+</button>
     </div>
   );
 }
