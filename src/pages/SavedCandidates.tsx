@@ -35,7 +35,7 @@ const SavedCandidates = () => {
                 <td>{candidate.company}</td>
                 <td>{candidate.bio}</td>
                 <td>
-                  <button
+                  <button className="btnX"
                     onClick={() => {
                       const savedCandidates = JSON.parse(localStorage.getItem("savedCandidates") || "[]");
                       const newCandidates = savedCandidates.filter((c: Candidate) => c.login !== candidate.login);
